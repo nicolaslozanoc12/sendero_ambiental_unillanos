@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sendero_ambiental_unillanos/pages/map.dart';
+import 'package:flutter_map_tile_caching/flutter_map_tile_caching.dart';
 
 void main() {
   runApp(const MyApp());
