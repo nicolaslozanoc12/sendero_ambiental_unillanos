@@ -1,5 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import 'package:sendero_ambiental_unillanos/db/models.dart';
 class SenderoDatabase{
   static final  SenderoDatabase instancia = SenderoDatabase.init();
 
@@ -29,7 +30,7 @@ class SenderoDatabase{
   }
   Future<void>  insert(Estacion estacion) async {
         final db=await instancia.database;
-        await db.insert(nombreEstacion, estacion.toMap() )
+        await db.insert(nombreEstacion, estacion.toMap());
       }
 
 }

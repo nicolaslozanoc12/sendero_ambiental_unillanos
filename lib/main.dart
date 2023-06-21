@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:sendero_ambiental_unillanos/pages/map.dart';
+import 'package:sendero_ambiental_unillanos/pages/informacion.dart';
+import 'package:sendero_ambiental_unillanos/pages/acerca.dart';
 import 'package:flutter_map_tile_caching/flutter_map_tile_caching.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterMapTileCaching.initialise();
+  await FMTC.instance('mapStore').manage.createAsync();
+
   runApp(const MyApp());
 }
 
@@ -72,8 +78,11 @@ class Inicio extends StatelessWidget {
           ),
           // Espacio entre la imagen y los botones
           Container(
-            margin: EdgeInsets.only(top: 20),
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+            color: Color.fromRGBO(218, 247, 166,0.2)
+            ),
+
+            padding: const EdgeInsets.only(top:20.0, left: 20.0,right: 20.0,bottom: 50.0),
             child: Column(
               children: [
                 BotonRecorrido(),
@@ -83,14 +92,20 @@ class Inicio extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        // Lógica del botón de información general
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Informacion())
+                        );
                       },
                       child: Text("Información general"),
 
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        // Lógica del botón de acerca de la app
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Acerca())
+                        );
                       },
                       child: Text("Acerca de la app"),
                     ),
