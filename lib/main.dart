@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:sendero_ambiental_unillanos/pages/map.dart';
 import 'package:sendero_ambiental_unillanos/pages/informacion.dart';
 import 'package:sendero_ambiental_unillanos/pages/acerca.dart';
-import 'package:flutter_map_tile_caching/flutter_map_tile_caching.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await FlutterMapTileCaching.initialise();
-  await FMTC.instance('mapStore').manage.createAsync();
 
+void main() {
   runApp(const MyApp());
 }
+
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
