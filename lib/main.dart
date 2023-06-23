@@ -130,7 +130,7 @@ class BotonRecorrido extends StatelessWidget {
       onPressed: () {
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Map())
+            MaterialPageRoute(builder: (context) => MapPage())
         );
       },
       child: Text(
