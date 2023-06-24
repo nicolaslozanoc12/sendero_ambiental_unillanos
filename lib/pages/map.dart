@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
 
 final mapController = MapController();
 
@@ -36,6 +37,7 @@ class _MapPageState extends State<MapPage> {
                   LatLngBounds( const LatLng(4.06896757930155,-73.593584532262),const LatLng(4.08074177362726,-73.5603546407673)),
                 ),
                 children: [
+                  CurrentLocationLayer(),
                   TileLayer(
                     urlTemplate: 'assets/offlineMap/{z}/{x}/{y}.png', // Ruta de las imágenes generadas
                     tileProvider: AssetTileProvider(), // Utiliza el proveedor de imágenes de assets
