@@ -27,6 +27,21 @@ class SenderoDatabase{
        ubicacion String
        )
        ''');
+    await db.execute('''CREATE  TABLE Fauna (
+       id INTEGER PRIMARY KEY,
+       nombre_fau String,
+       descrip_fau Text,
+       imagen_fau Blob
+       )
+       ''');
+    await db.execute('''CREATE  TABLE Flora(
+       id INTEGER PRIMARY KEY,
+       nombre_flo String,
+       descrip_flo Text,
+       imagen_flo Blob
+       )
+       ''');
+
   }
   Future<void>  insert(Estacion estacion) async {
         final db=await instancia.database;
@@ -34,3 +49,4 @@ class SenderoDatabase{
       }
 
 }
+
