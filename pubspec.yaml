@@ -66,6 +66,16 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
       - assets/images/imagen_principal.jpg
+      - assets/images/estacion1.png
+      - assets/images/estacion2.png
+      - assets/images/estacion3.png
+      - assets/images/estacion4.png
+      - assets/images/estacion6.png
+      - assets/images/estacion7.png
+      - assets/images/estacion8.png
+      - assets/images/estacion10.png
+      - assets/images/estacion11.png
+      - assets/images/estacion14.png
       - assets/offlineMap/16/19370/32024.png
       - assets/offlineMap/16/19370/32025.png
       - assets/offlineMap/16/19370/32026.png

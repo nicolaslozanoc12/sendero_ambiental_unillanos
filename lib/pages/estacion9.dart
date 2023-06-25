@@ -5,22 +5,18 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var numEstacion=1;
+    double containerHeight = MediaQuery.of(context).size.height * 1;
     return MaterialApp(
       home: Scaffold(
-        body: SafeArea(
-          child: ListView(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                  'https://c.files.bbci.co.uk/4F6C/production/_94223302_mediaitem93780216.jpg',
-                ),
-                fit: BoxFit.cover,
-                repeat: ImageRepeat.repeat,
-                ),
-               ),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/estacion1.png'),
+              fit: BoxFit.cover,
+              repeat: ImageRepeat.repeat,
+              colorFilter: ColorFilter.mode(Colors.white.withOpacity(0.8), BlendMode.dstATop), // Agrega transparencia aquí
+            ),
+          ),
                child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   mainAxisSize: MainAxisSize.max,
@@ -37,9 +33,13 @@ class MyApp extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: (){
                             },
-                            child: Text("Estación ${numEstacion}",style: TextStyle(fontSize: 25)),
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
+                            ),
+                            child: Text("Estación 9",style: TextStyle(fontSize: 25),
                             key: key ,
                           ),
+                        ),
                         ),
                       ],
                     ),
@@ -52,10 +52,15 @@ class MyApp extends StatelessWidget {
                         Container(
                           width: 150,
                           height: 110,
-                          margin: EdgeInsets.symmetric(vertical: 100),
+                          margin: EdgeInsets.symmetric(vertical: 25),
                           child: ElevatedButton(
-                            onPressed: (){}
-                            , child: Text("Flora",style: TextStyle(fontSize: 25)),
+                            onPressed: (){
+
+                            },
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
+                              ),
+                             child: Text("Flora",style: TextStyle(fontSize: 25)),
                           ),
                         ),
                         Container(
@@ -64,6 +69,9 @@ class MyApp extends StatelessWidget {
                           margin: EdgeInsets.symmetric(vertical: 25),
                           child: ElevatedButton(
                             onPressed: (){},
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
+                            ),
                             child: Text("Fauna", style: TextStyle(fontSize: 25),
                             ),
                           ),
@@ -81,6 +89,9 @@ class MyApp extends StatelessWidget {
                           height: 60,
                           child: ElevatedButton(
                             onPressed: (){},
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
+                            ),
                             child: Text("Ver Mapa", style: TextStyle(fontSize: 25)),
                           ),
                         ),
@@ -89,10 +100,8 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-          ],
-        ),
-       ),
       ),
     );
+
   }
 }
