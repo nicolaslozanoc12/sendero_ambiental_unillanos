@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'dart:typed_data';
 
-import 'package:sendero_ambiental_unillanos/db/senderoDatabase.dart';
 
 class Estacion {
   final int numero_est;
@@ -23,11 +22,11 @@ class Estacion {
       'ubicacion': ubicacion,
     };
   }
-  void addEstacion(Estacion estacion){
-    SenderoDatabase.instancia.insert(estacion);
 
+  @override
+  String toString() {
+    return 'Dog{numero_est: $numero_est, nombre_est: $nombre_est, descrip_est: $descrip_est,ubicacion: $ubicacion}';
   }
-
 }
 class Flora{
     final String nombre_flo;
@@ -41,12 +40,6 @@ class Flora{
       required this.imagen_flo,
       required this.audio_flo,
     });
-
-    void addFlora(Flora flora){
-
-    }
-
-
 }
 
 class Fauna{
@@ -61,9 +54,5 @@ class Fauna{
         required this.imagen_fau,
         required this.audio_fau,
       });
-  void addFauna(Fauna fauna){
-
-  }
-
 }
 
