@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Estacion9());
 
-class MyApp extends StatelessWidget {
+class Estacion9 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double containerHeight = MediaQuery.of(context).size.height * 1;

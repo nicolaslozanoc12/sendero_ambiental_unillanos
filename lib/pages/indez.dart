@@ -22,22 +22,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Estaciones'),
         ),
-        body: ListView.builder(
-          itemCount: estaciones.length,
-          itemBuilder: (context, index) {
-            final estacion = estaciones[index];
-            return ListTile(
-              title: Text('Número: ${estacion.numero_est}'),
-              subtitle: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Nombre: ${estacion.nombre_est}'),
-                  Text('Descripción: ${estacion.descrip_est}'),
-                  Text('Ubicación: ${estacion.ubicacion}'),
-                ],
-              ),
-            );
-          },
+        body: Center(
+          child: Text("BODYYY"),
         ),
       ),
     );

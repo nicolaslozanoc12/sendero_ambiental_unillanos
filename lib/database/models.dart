@@ -13,6 +13,14 @@ class Estacion {
     required this.descrip_est,
     required this.ubicacion
   });
+  factory Estacion.fromMap(Map<String, dynamic> map) {
+    return Estacion(
+      numero_est: map['numero_est'],
+      nombre_est: map['nombre_est'],
+      descrip_est: map['descrip_est'],
+      ubicacion: map['ubicacion'],
+    );
+  }
 
   Map<String, dynamic> toMap() {
     return {
