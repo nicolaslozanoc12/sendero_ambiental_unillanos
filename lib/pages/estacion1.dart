@@ -420,6 +420,57 @@ class Flora extends StatelessWidget {
   }
 }
 
+class PezuñaDeBuey extends StatelessWidget {
+  const PezuñaDeBuey({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Pezuña de buey",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                      "Árbol perennifolio que puede alcanzar hasta 7 o más metros de altura. Sus flores son de color blanco y rosáceo, y es semejantes a una orquídea.",
+                      style: TextStyle(fontSize: 18),
+                      textAlign: TextAlign.center,
+                    )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                        image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                      ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+
+
 class InfoMonoComun extends StatelessWidget {
   const InfoMonoComun({super.key});
   @override
