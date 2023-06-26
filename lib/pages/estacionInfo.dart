@@ -11,12 +11,10 @@ class EstacionInfo extends StatelessWidget{
       final senderoDatabase = SenderoDatabase();
       final db = await senderoDatabase.openDB();
       print("ESTOY ENTRANDO Y MI DB ES: $db ---");
-
       final List<Map<String, dynamic>> resultado = await db.query('Estacion');
       print("SALGO");
       return resultado.map((map) => Estacion.fromMap(map)).toList();
     }
-
 
 
     return MaterialApp(

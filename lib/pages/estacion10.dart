@@ -32,6 +32,13 @@ class Estacion10 extends StatelessWidget {
                           height: 60,
                           child: ElevatedButton(
                             onPressed: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => InfoEstacion(),
+                                ),
+                              );
+
                             },
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
@@ -103,5 +110,93 @@ class Estacion10 extends StatelessWidget {
       ),
     );
 
+  }
+}
+class InfoEstacion extends StatelessWidget {
+  const InfoEstacion({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text(
+                          "PTAR", style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 40),
+                    child: Center(
+                        child: Text(
+                          "La planta de tratamiento de aguas residuales (PTAR) además de cumplimiento normativo, permite estudiar el recurso de agua y su interacción con los ecosistemas presentes. Tema fundamental en la concientización de la gestión integral de recursos hídricos en la institución.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,)
+                    ),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/estacion10.png'),
+                          )
+                      )
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          width: 70,
+                          height: 70,
+                          margin: EdgeInsets.all(0),
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/images/ODS15.png'),
+                              )
+                          )
+                      ),
+                      Container(
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/ODS13.png'),
+                            )
+                        ),
+
+                      ),
+                      Container(
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/ODS4.png'),
+                            )
+                        ),
+
+                      )
+                    ],
+                  )
+
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+
+            )
+        )
+    );
   }
 }

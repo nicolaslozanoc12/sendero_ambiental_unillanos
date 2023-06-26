@@ -32,6 +32,12 @@ class Estacion3 extends StatelessWidget {
                           height: 60,
                           child: ElevatedButton(
                             onPressed: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => InfoEstacion(),
+                                ),
+                              );
                             },
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
@@ -103,5 +109,103 @@ class Estacion3 extends StatelessWidget {
       ),
     );
 
+  }
+}
+class InfoEstacion extends StatelessWidget {
+  const InfoEstacion({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text(
+                          "RATA DE BAMBU", style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 40),
+                    child: Center(
+                        child: Text(
+                          "Presencia de canal, caminos peatonales y coomplejo deportivo. La arborización por años se ha logrado con actvidades de aula. Este punto se reconoce por los avistamientos de la rat del bambú Dactylmys dactylinus",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,)
+                    ),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/estacion3.png'),
+                          )
+                      )
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          width: 70,
+                          height: 70,
+                          margin: EdgeInsets.all(0),
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/images/ODS4.png'),
+                              )
+                          )
+                      ),
+                      Container(
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/ODS6.png'),
+                            )
+                        ),
+
+                      ),
+                      Container(
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/ODS13.png'),
+                            )
+                        ),
+
+                      ),
+                      Container(
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/ODS15.png'),
+                            )
+                        ),
+
+                      )
+                    ],
+                  )
+
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+
+            )
+        )
+    );
   }
 }
