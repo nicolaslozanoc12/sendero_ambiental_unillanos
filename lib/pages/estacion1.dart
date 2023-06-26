@@ -420,8 +420,8 @@ class Flora extends StatelessWidget {
   }
 }
 
-class PezuñaDeBuey extends StatelessWidget {
-  const PezuñaDeBuey({super.key});
+class PezuniaDeBuey extends StatelessWidget {
+  const PezuniaDeBuey({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

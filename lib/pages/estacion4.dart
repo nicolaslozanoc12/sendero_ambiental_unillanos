@@ -390,3 +390,101 @@ class Flora extends StatelessWidget {
     );
   }
 }
+class TuquitoRayado extends StatelessWidget {
+  const TuquitoRayado({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("TUQUITO RAYADO",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Tiránido mediano encontrado comúnmente en dosel, bordes de bosque, sabanas y zonas urbanas en donde suelen posarse a menudo en ramas expuestas. ",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/tuquitoRayado.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class PajaroSolitario extends StatelessWidget {
+  const PajaroSolitario({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("ANDARRÍOS SOLITARIO",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "A menudo solo. Más pequeño que Lesser Yellowlegs, con patas más verdes. Generalmente gris por encima y blanco por abajo, moteado fino blanco en las alas y usualmente con anteojos blancos distintivos.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/aguilaPescadora.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}

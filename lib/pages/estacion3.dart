@@ -250,7 +250,15 @@ class Fauna extends StatelessWidget {
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Guacharaca(),
+                        ),
+                      );
+
+                    },
                     child: Text("Guacharaca",style: TextStyle(fontSize: 25)),
                   ),
                 ),
@@ -261,7 +269,14 @@ class Fauna extends StatelessWidget {
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Tucanillo(),
+                        ),
+                      );
+                    },
                     child: Text("Tucanillo",style: TextStyle(fontSize: 25)),
                   ),
                 ),
@@ -272,7 +287,14 @@ class Fauna extends StatelessWidget {
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Mirla(),
+                        ),
+                      );
+                    },
                     child: Text("Mirla buchiblanca",style: TextStyle(fontSize: 25),),
                   ),
                 ),
