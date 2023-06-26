@@ -294,3 +294,150 @@ class Fauna extends StatelessWidget {
     );
   }
 }
+class Guacharaca extends StatelessWidget {
+  const Guacharaca({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("GUACHARACA",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Es una especie que se alimenta principalmente de frutas, semillas e insectos. Aunque no se considera una especie en peligro de extinción, su población se ha visto afectada por la deforestación y la caza",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/guacharaca.png'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Tucanillo extends StatelessWidget {
+  const Tucanillo ({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("TUCANILLO",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Es un ave facilmente reconocible por sus colores vistosos, se alimenta frutas, semillas e insectos.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/tucanillo.png'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Mirla extends StatelessWidget {
+  const Mirla ({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("MIRLA BUCHIBLANCA",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Es un ave muy común en zonas intervenidas, habita en arbustos y árboles. Se alimenta de insectos que encuentra en el suelo.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/mirla.png'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}

@@ -77,12 +77,20 @@ flutter:
       - assets/images/estacion10.png
       - assets/images/estacion11.png
       - assets/images/estacion14.png
-      - assets/images/serviciosE1.png
       - assets/images/ODS4.png
       - assets/images/ODS12.png
       - assets/images/ODS15.png
       - assets/images/ODS13.png
       - assets/images/ODS6.png
+      - assets/images/monoArdilla.jpg
+      - assets/images/aguilaPescadora.jpg
+      - assets/images/iguana.jpg
+      - assets/images/ameivaAmeiva.jpg
+      - assets/images/tuquitoRayado.jpg
+      - assets/images/pajaroSolitario.jpg
+      - assets/images/guacharaca.png
+      - assets/images/tucanillo.png
+      - assets/images/mirla.png
       - assets/offlineMap/16/19370/32024.png
       - assets/offlineMap/16/19370/32025.png
       - assets/offlineMap/16/19370/32026.png
