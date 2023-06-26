@@ -61,6 +61,13 @@ class Estacion3 extends StatelessWidget {
                           margin: EdgeInsets.symmetric(vertical: 25),
                           child: ElevatedButton(
                             onPressed: (){
+                              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Flora(),
+                              ),
+                            );
+
 
                             },
                               style: ButtonStyle(

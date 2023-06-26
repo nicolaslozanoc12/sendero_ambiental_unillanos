@@ -64,7 +64,15 @@ class Estacion1 extends StatelessWidget {
                     height: 110,
                     margin: EdgeInsets.symmetric(vertical: 25),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Flora(),
+                          ),
+                        );
+
+                      },
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
                             Colors.lightGreen.shade300), // Cambia el color aquí
