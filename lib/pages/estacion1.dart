@@ -68,7 +68,12 @@ class Estacion1 extends StatelessWidget {
                           height: 110,
                           margin: EdgeInsets.symmetric(vertical: 25),
                           child: ElevatedButton(
-                            onPressed: (){},
+                            onPressed: (){Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Fauna(),
+                              ),
+                            );},
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen.shade300), // Cambia el color aquí
                             ),
@@ -105,3 +110,20 @@ class Estacion1 extends StatelessWidget {
 
   }
 }
+class Fauna extends StatelessWidget {
+  const Fauna({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Fauna'),
+      ),
+      body: const Center(
+        child:
+      ),
+    );
+  }
+}
+
+
+
