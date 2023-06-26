@@ -249,7 +249,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Archibebe patigualdo chico",style: TextStyle(fontSize: 25)),
+                    child: Text("Archibebe",style: TextStyle(fontSize: 25)),
                   ),
                 ),
                 Container(
@@ -260,7 +260,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Búho, Autillo chóliba",style: TextStyle(fontSize: 25)),
+                    child: Text("Búho",style: TextStyle(fontSize: 25)),
                   ),
                 ),
                 Container(

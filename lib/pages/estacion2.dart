@@ -333,7 +333,7 @@ class Flora extends StatelessWidget {
                     ),
                     onPressed: () {
                     },
-                    child: Text("Ochroma pyramidale",
+                    child: Text("Ochroma",
                         style: TextStyle(fontSize: 25)),
                   ),
                 ),
@@ -374,7 +374,7 @@ class Flora extends StatelessWidget {
                     ),
                     onPressed: () {},
                     child:
-                    Text("Megaskepasma erythrochlamys", style: TextStyle(fontSize: 25)),
+                    Text("Megaskepasma", style: TextStyle(fontSize: 25)),
                   ),
                 ),
                 Container(

@@ -250,7 +250,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Chucha, Zarigüeya común",style: TextStyle(fontSize: 25)),
+                    child: Text("Chucha",style: TextStyle(fontSize: 25)),
                   ),
                 ),
                 Container(
@@ -336,7 +336,7 @@ class Flora extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Asystasia gangetica",style: TextStyle(fontSize: 25)),
+                    child: Text("Asystasia",style: TextStyle(fontSize: 25)),
                   ),
                 ),
                 Container(

@@ -250,7 +250,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Murciélago pescador menor",style: TextStyle(fontSize: 25)),
+                    child: Text("Murciélago",style: TextStyle(fontSize: 25)),
                   ),
                 ),
                 Container(
@@ -272,7 +272,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Puercoespín arborícola",style: TextStyle(fontSize: 25),),
+                    child: Text("Puercoespín",style: TextStyle(fontSize: 25),),
                   ),
                 ),
                 Container(
@@ -283,7 +283,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Mico de noche llanero",style: TextStyle(fontSize: 25)),
+                    child: Text("Mico de noche",style: TextStyle(fontSize: 25)),
                   ),
                 ),
 

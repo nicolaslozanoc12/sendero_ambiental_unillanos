@@ -304,7 +304,7 @@ class Fauna extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: (){},
-                    child: Text("Boa de Ruschenberger",style: TextStyle(fontSize: 25)),
+                    child: Text("Boa Ruschenberger",style: TextStyle(fontSize: 25)),
                   ),
                 ),
 
