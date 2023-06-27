@@ -7,7 +7,7 @@ class Acerca extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Fauna'),
+        title: const Text('Acerca de la App'),
       ),
       body: ListView(
         children: [

@@ -8,6 +8,7 @@ class Estacion1 extends StatelessWidget {
   Widget build(BuildContext context) {
     double containerHeight = MediaQuery.of(context).size.height * 1;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           decoration: BoxDecoration(
