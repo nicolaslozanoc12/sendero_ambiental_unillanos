@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(Estacion2());
@@ -332,6 +334,14 @@ class Flora extends StatelessWidget {
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => OchromaPyramidale(),
+                        ),
+                      );
+
+
                     },
                     child: Text("Ochroma",
                         style: TextStyle(fontSize: 25)),
@@ -345,7 +355,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Cecropia(),
+                        ),
+                      );
+
+                    },
                     child: Text("Cecropia", style: TextStyle(fontSize: 25)),
                   ),
                 ),
@@ -357,7 +375,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Ficus(),
+                        ),
+                      );
+
+                    },
                     child: Text(
                       "Ficus",
                       style: TextStyle(fontSize: 25),
@@ -372,7 +398,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CapaRoja(),
+                        ),
+                      );
+
+                    },
                     child:
                     Text("Megaskepasma", style: TextStyle(fontSize: 25)),
                   ),
@@ -385,7 +419,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Zingiberales(),
+                        ),
+                      );
+
+                    },
                     child:
                     Text("Zingiberales", style: TextStyle(fontSize: 25)),
                   ),
@@ -398,7 +440,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Musaceae(),
+                        ),
+                      );
+
+                    },
                     child:
                     Text("Musaceae", style: TextStyle(fontSize: 25)),
                   ),
@@ -411,7 +461,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Anthurium(),
+                        ),
+                      );
+
+                    },
                     child:
                     Text("Anthurium", style: TextStyle(fontSize: 25)),
                   ),
@@ -529,3 +587,353 @@ class PajaroSolitario extends StatelessWidget {
             )));
   }
 }
+class OchromaPyramidale extends StatelessWidget {
+  const OchromaPyramidale({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Balsa, Ochroma pyramidale",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Conocida como balsa, madera de balso o guaguaripo, es un árbol de la familia Malvaceae. Es la única especie del género monotípico Ochroma y es nativa de México, Suramérica y el Caribe.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Cecropia extends StatelessWidget {
+  const Cecropia({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Yarumo, Yarumo blanco",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Comprende unas 65 especies de árboles dioicos que se hallan en Centroamérica y Sudamérica. Son árboles, frecuentemente con raíces fulcrantes y poco ramificadas; tallos terminales normalmente huecos y septados, habitados por hormigas, con látex oscuro al secarse; hojas peltadas, ligera a profundamente palmatilobuladas; pecíolos teretes y acostillados, con pulvínulo grande en la base.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Ficus extends StatelessWidget {
+  const Ficus({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("La higuera común",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Contiene alrededor de 900 taxones específicos e infra-específicos aceptados de árboles, arbustos y trepadoras de la familia Moraceae, tribu monogenérica Ficeae, oriundas de la zona intertropical, con algunas de ellas distribuidas por las regiones templadas. Una de las características de las especies de este género es la secreción lechosa llamada látex que segregan al cortar o herir cualquier parte de la planta.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class CapaRoja extends StatelessWidget {
+  const CapaRoja({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Capa roja",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Es un género monotípico de plantas con flores perteneciente a la familia Acanthaceae. Su única especie: Megaskepasma erythrochlamys Lindau, se distribuye por Centroamérica y el norte de Sudamérica. Es un arbusto de hasta 4 m de alto; los tallos jóvenes subcuadrangulares, pubérulos. Las hojas elípticas, de 13–28 cm de largo y 3.5–13 cm de ancho, el ápice acuminado con un acumen apiculado y redondeado, base aguda, márgenes enteros a crenulados, con pecíolos de hasta 4 cm de largo, pubérulos.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Zingiberales extends StatelessWidget {
+  const Zingiberales({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Árbol del viajero",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Son hierbas bastante grandes, a veces de tamaño monstruoso (como Musa, Ravenala o Strelitzia). Falta el tallo aéreo salvo el que da las flores. Las hojas están bien diferenciadas en pecíolo y lámina, poseen vena media, venas laterales con forma de S y venación fina transversal.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Musaceae extends StatelessWidget {
+  const Musaceae({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Musáceas",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Son una familia de plantas monocotiledóneas conocidas por sus frutos (bananas). Son plantas herbáceas perennes, generalmente de gran tamaño, a veces parcialmente leñosas. Los tallos son subterráneos, simpodiales, rizomatosos a cormosos, y hapaxánticos.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Anthurium extends StatelessWidget {
+  const Anthurium({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Anturios",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Son plantas caducas, herbáceas o leñosas, erectas, rastreras o trepadoras, de hojas muy decorativas. Las hojas son de consistencia y grosor notables, ovales, en forma de corazón o punta de flecha, bastante grande, a veces divididas en lóbulos o incluso en forma de mano.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+
+
+
+
+
+
+

@@ -496,3 +496,160 @@ class PajaroSolitario extends StatelessWidget {
             )));
   }
 }
+class CarpinteroManchado extends StatelessWidget {
+  const CarpinteroManchado ({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Carpintero manchado",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Es un ave de color marrón claro  con manchas negras en la parte superior y blancas en la parte inferior",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class CarpinteroReal extends StatelessWidget {
+  const CarpinteroReal({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Carpintero Real",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Ave carpintera, se alimenta de insectos y frutos. Habita en bosques y zonas urbanas.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Atrapamoscas extends StatelessWidget {
+  const Atrapamoscas ({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Atrapamoscas",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Ave común en zonas urbanas, bosques y praderas. Se alimenta principalmente de insectos.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+
+
+
+
+
+
+
+
+
+

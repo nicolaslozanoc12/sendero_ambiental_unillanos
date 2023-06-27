@@ -371,6 +371,12 @@ class Flora extends StatelessWidget {
                           MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
                     onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PezuniaDeBuey(),
+                        ),
+                      );
                     },
                     child: Text("Bauhinia forficata",
                         style: TextStyle(fontSize: 25)),
@@ -384,7 +390,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Bromeliaceas(),
+                        ),
+                      );
+
+                    },
                     child: Text("Bromeliaceae", style: TextStyle(fontSize: 25)),
                   ),
                 ),
@@ -396,7 +410,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Cactaceae(),
+                        ),
+                      );
+
+                    },
                     child: Text(
                       "Cactaceae",
                       style: TextStyle(fontSize: 25),
@@ -411,7 +433,15 @@ class Flora extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.lightGreen),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Polypodiaceas(),
+                        ),
+                      );
+
+                    },
                     child:
                         Text("Polypodiaceae", style: TextStyle(fontSize: 25)),
                   ),
@@ -467,6 +497,105 @@ class PezuniaDeBuey extends StatelessWidget {
                           image: DecorationImage(
                         image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
                       ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+
+class Bromeliaceas extends StatelessWidget {
+  const Bromeliaceas({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Bromeliáceas",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Poseen hojas arrosetadas, flores y brácteas coloridas y vistosas, y los estigmas típicamente retorcidos. Gracias a su dulce fruta, la especie más conocida en todo el mundo es la piña o ananá (Ananas comosus), un cultivo de regiones cálidas.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+class Cactaceae extends StatelessWidget {
+  const Cactaceae({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Bromeliáceas",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Es una familia de plantas originarias de América. Sin embargo, hay una excepción, Rhipsalis baccifera, que está extendida en África tropical, Madagascar y Ceilán. Al vivir en zonas de calores extremos, los cactus realizan el intercambio de gases durante la noche mediante el metabolismo ácido de las crasuláceas, consumiendo entonces dióxido de carbono, al revés que el resto de las plantas (que lo consumen, netamente, durante el día).",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
                 ],
               ),
             ),
@@ -677,4 +806,54 @@ class AmeivasGigantes extends StatelessWidget {
             )));
   }
 }
+class Polypodiaceas extends StatelessWidget {
+  const Polypodiaceas({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.symmetric(vertical: 70),
+                    decoration: BoxDecoration(
+                      color: Colors.lightGreen.shade300, // Color deseado
+                    ),
+                    child: Center(
+                      child: Text("Polypodiáceas",
+                          style: TextStyle(fontSize: 25)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    child: Center(
+                        child: Text(
+                          "Son una familia de helechos del orden Polypodiales, con un rizoma del que surgen frondes dísticas y articuladas en el punto de unión al rizoma.",
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.center,
+                        )),
+                  ),
+                  Container(
+                      width: 300,
+                      height: 300,
+                      margin: EdgeInsets.symmetric(vertical: 30),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/PezuñaDeBuey.jpg'),
+                          ))),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              backgroundColor: Colors.lightGreen,
+              child: const Icon(Icons.exit_to_app),
+            )));
+  }
+}
+
 
