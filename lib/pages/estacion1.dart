@@ -140,6 +140,7 @@ class InfoEstacion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -219,6 +220,7 @@ class Fauna extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
             child: ListView(
@@ -341,6 +343,7 @@ class Flora extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
             child: ListView(
@@ -466,6 +469,7 @@ class PezuniaDeBuey extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -516,6 +520,7 @@ class Bromeliaceas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -565,6 +570,7 @@ class Cactaceae extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -616,6 +622,7 @@ class InfoMonoComun extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -665,6 +672,7 @@ class InfoAguilaPescadora extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -714,6 +722,7 @@ class Iguana extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -763,6 +772,7 @@ class AmeivasGigantes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -812,6 +822,7 @@ class Polypodiaceas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(

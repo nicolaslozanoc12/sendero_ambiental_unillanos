@@ -403,6 +403,8 @@ class TuquitoRayado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
+
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -452,6 +454,8 @@ class PajaroSolitario extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
+
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -501,6 +505,7 @@ class CarpinteroManchado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -550,6 +555,7 @@ class CarpinteroReal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -599,6 +605,7 @@ class Atrapamoscas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(

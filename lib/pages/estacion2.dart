@@ -9,6 +9,7 @@ class Estacion2 extends StatelessWidget {
   Widget build(BuildContext context) {
     double containerHeight = MediaQuery.of(context).size.height * 1;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           decoration: BoxDecoration(
@@ -133,6 +134,7 @@ class InfoEstacion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -223,6 +225,7 @@ class Fauna extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
             child: ListView(
@@ -303,6 +306,7 @@ class Flora extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
             child: ListView(
@@ -494,6 +498,7 @@ class TuquitoRayado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -543,6 +548,7 @@ class PajaroSolitario extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -592,6 +598,7 @@ class OchromaPyramidale extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -641,6 +648,7 @@ class Cecropia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -690,6 +698,7 @@ class Ficus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -739,6 +748,7 @@ class CapaRoja extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -788,6 +798,7 @@ class Zingiberales extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -837,6 +848,7 @@ class Musaceae extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
@@ -886,6 +898,7 @@ class Anthurium extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Container(
               child: ListView(
