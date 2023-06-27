@@ -52,11 +52,29 @@ class _MapPageState extends State<MapPage> {
                   LatLngBounds( const LatLng(4.06896757930155,-73.593584532262),const LatLng(4.08074177362726,-73.5603546407673)),
                 ),
                 children: [
-                  CurrentLocationLayer(),
+
+                  PolylineLayer(
+                    polylines: [
+                      Polyline(
+                        points: [
+                          LatLng(4.07411, -73.5865),
+                          LatLng(4.07421, -73.5863),
+                          LatLng(4.0734, -73.586),
+                          LatLng(4.0735, -73.5849),
+                          LatLng(4.0726, -73.5848),
+                          LatLng(4.0731, -73.5838),
+                          LatLng(4.0718, -73.5838),
+                        ],
+                        color: Colors.brown,
+                      ),
+                    ],
+                  ),
+
                   TileLayer(
                     urlTemplate: 'assets/offlineMap/{z}/{x}/{y}.png', // Ruta de las imágenes generadas
                     tileProvider: AssetTileProvider(), // Utiliza el proveedor de imágenes de assets
                   ),
+                  CurrentLocationLayer(),
                   MarkerLayer(
                     markers: [
                       Marker(point: const LatLng(4.074166, -73.586566),
@@ -135,7 +153,8 @@ class _MapPageState extends State<MapPage> {
                           builder: (ctx) => DecorationMarket(estacion: "15",)
                       ),
                     ],
-                  )
+                  ),
+
                 ],
               ),
             ),
@@ -337,17 +356,3 @@ String estacion;
   }
 }
 
-class AnotherPage extends StatelessWidget {
-  const AnotherPage({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Another Page'),
-      ),
-      body: const Center(
-        child: Text('This is another page.'),
-      ),
-    );
-  }
-}
